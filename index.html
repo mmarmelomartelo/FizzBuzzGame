@@ -40,9 +40,13 @@
 function hello()
 { 
 	var typedNumber = document.getElementById("number").value;
-	isNaN(typedNumber);
+	isNaN(typedNumber); 
 
-				if (typedNumber % 3 == 0 && typedNumber % 5 == 0)
+				
+				if (typedNumber > 10000 )
+				{document.getElementById ("output").innerHTML = "I was not programmed to calculate numbers higher than 10 000! Take it easy!!! ";}
+	
+				else if (typedNumber % 3 == 0 && typedNumber % 5 == 0)
 				{document.getElementById ("output").innerHTML = typedNumber +". We have a FizzBuzz!! </br>";}
 				
 				else if (typedNumber % 3 == 0 )
@@ -53,6 +57,7 @@ function hello()
 
 				else if (typedNumber > 10000 )
 				{document.getElementById ("output").innerHTML = "I was not programmed to calculate numbers higher than 10 000! Take it easy!!! ";}
+				
 				else if ( isNaN(typedNumber))
 				{document.getElementById ("output").innerHTML = "Am I a joke to you?! Type a number, please!!! ";}
 				
